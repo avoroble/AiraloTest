@@ -25,7 +25,7 @@ test('UI: Verify Moshi Moshi package details', async ({ page }) => {
     await expect(page.getByTestId('sim-detail-info-list').getByText('DATA 1 GB')).toBeVisible();
     // d. Verify Validity is 7 Days
     await expect(page.getByTestId('sim-detail-info-list').getByText('VALIDITY 7 Days')).toBeVisible();
-    // e. Verify Price is 4.50 €
-    await expect(page.getByTestId('sim-detail-info-list').getByText('PRICE 4.50 €')).toBeVisible();
+    // e. Verify Price is $4.50
+    await expect(page.getByTestId('sim-detail-info-list').getByText('PRICE $4.50 USD')).toBeVisible();
 
 });
