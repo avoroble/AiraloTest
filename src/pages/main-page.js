@@ -11,8 +11,8 @@ exports.MainPage = class MainPage {
 
   async goto() {
     await this.page.goto('https://www.airalo.com/');
-    await this.cookiesAccept.click();
-    await this.pushNotifNotAllow.click();
+    // await this.cookiesAccept.click();
+    // await this.pushNotifNotAllow.click();
 
   }
 
