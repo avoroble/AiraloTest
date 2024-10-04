@@ -25,13 +25,16 @@ Page Objecs are stored in /src/pages/.
 
 ## Implementation status
 ### UI
-Structureweise UI framework is in the good shape. Future steps: extend Pago Object coverage.
+Structurally, the UI framework is in good shape. Future steps include extending Page Object coverage.
 
 ### API
-Some data structures (like request body) were moved to dedicated folder (/src/requestBody).
-I would also move endpoints constatnts and HTTP methods into separate files to shape the framework structure. And in files were test are stored use only more compacat high level functions.
+Some data structures (like the request body) have been moved to a dedicated folder (/src/requestBody).
+Necessary improvements: move endpoint constants and HTTP methods into separate files to further refine the framework structure. In the files where tests are stored, only more compact, high-level functions should be used.
 
 
 
 
+
+
+API
 
