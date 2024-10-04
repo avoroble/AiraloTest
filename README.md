@@ -10,7 +10,7 @@ An interpreted programming language was chosen to avoid the compilation step, re
 Playwright is a free, open-source tool with strong community support, high performance, and exceptional parallelization capabilities.
 
 ## Instructions on how to run test
-Tests will run on push or pull request on branches main/master. The workflow will install all dependencies, install Playwright and then run the tests. The detailed configuration is stored in .github/workflows/playwright.yml.
+Tests will run on push or pull request on branches main/master. The workflow will download Docker container with pre-installed environment, install dependencies and then run the tests. The detailed configuration is stored in .github/workflows/playwright.yml.
 
 Test execution can be triggered manually from the GitHub "Actions" tab by selecting the last workflow run and clicking the "Re-run all jobs" button.
 
@@ -22,6 +22,15 @@ Tests are stored in the /tests folder, which contains API and UI subfolders, in 
 
 UI test is implemented using Page Object Pattern to increase code mantainability and avoid code duplacation.
 Page Objecs are stored in /src/pages/.
+
+## Implementation status
+### UI
+Structureweise UI framework is in the good shape. Future steps: extend Pago Object coverage.
+
+### API
+Some data structures (like request body) were moved to dedicated folder (/src/requestBody).
+I would also move endpoints constatnts and HTTP methods into separate files to shape the framework structure. And in files were test are stored use only more compacat high level functions.
+
 
 
 
